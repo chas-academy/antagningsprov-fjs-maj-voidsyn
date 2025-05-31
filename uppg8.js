@@ -1,7 +1,25 @@
 
 
 function uppg8(){
+    const personer = [
+        { name: "Anna", age: 22 },
+        { name: "Johan", age: 35 },
+        { name: "Sara", age: 40 },
+        { name: "Kalle", age: 18 },
+        { name: "Lisa", age: 31 }
+    ];
 
+    function skrivUtnamnOver30(arr) {
+        for (const person of arr) {
+
+            if (person.age > 30) {
+                console.log(person.name);
+            }
+        }
+            
+    }
+
+    skrivUtnamnOver30(personer);
 // skapa en array med fem person obkjet
 // varje person objekt ska ha två properties, name och age
 
